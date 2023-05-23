@@ -1,8 +1,0 @@
-{
-    "rewrites": [
-        {
-          "source": "/api/(.*)",
-          "destination": "/api/auth/[auth].js?auth=$1"
-        }
-      ]
-}

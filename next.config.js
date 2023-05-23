@@ -18,6 +18,14 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'https://nextjs-fullstack-sage.vercel.app/:path*',
+      },
+    ];
+  },
 }
 
 module.exports = nextConfig
