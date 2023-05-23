@@ -1,7 +1,7 @@
 {
     "rewrites": [
         {
-          "source": "/api/auth/(.*)",
+          "source": "/api/(.*)",
           "destination": "/api/auth/[auth].js?auth=$1"
         }
       ]
